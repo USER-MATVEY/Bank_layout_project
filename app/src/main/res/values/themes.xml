@@ -7,8 +7,7 @@
 
     <style name="Theme.Bank_layout_project" parent="Base.Theme.Bank_layout_project" />
 
-    <style name="myEditTextStyle" parent="android:Widget.EditText">
-        <item name="android:layout_width">match_parent</item>
+    <style name="EditTextStyle" parent="android:Widget.EditText">
         <item name="android:layout_height">wrap_content</item>
         <item name="android:background">@drawable/edittext_border</item>
         <item name="android:textSize">14sp</item>

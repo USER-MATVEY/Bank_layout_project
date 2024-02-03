@@ -6,12 +6,72 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <TextView
+        android:id="@+id/name_input_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="asdfafa"
+        app:layout_constraintBottom_toTopomOf="@id/name_input"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/name_input"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/card_input_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ghkj"
+        app:layout_constraintBottom_toTopOf="@id/card_num_input"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/card_num_input"
+        app:layout_constraintTop_toBottomOf="@id/name_input" />
+
+    <TextView
+        android:id="@+id/date_input_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="qwerq"
+        app:layout_constraintTop_toBottomOf="@id/card_num_input"
+        app:layout_constraintBottom_toTopOf="@id/date_input"
+        app:layout_constraintStart_toStartOf="@id/date_input"/>
+
+    <TextView
+        android:id="@+id/cww_iput_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="zxcbv"
+        app:layout_constraintTop_toBottomOf="@id/card_num_input"
+        app:layout_constraintBottom_toTopOf="@id/cww_input"
+        app:layout_constraintStart_toStartOf="@id/cww_input"/>
+
     <EditText
-        style="@style/myEditTextStyle"
+        android:id="@+id/name_input"
+        style="@style/EditTextStyle"
         android:text="asdfas"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
+        app:layout_constraintTop_toBottomOf="@id/name_input_text"/>
+    <EditText
+        android:id="@+id/card_num_input"
+        style="@style/EditTextStyle"
+        android:text="asdfas"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/card_input_text" />
+    <EditText
+        android:id="@+id/date_input"
+        style="@style/EditTextStyle"
+        android:text="asdfas"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/cww_input"
+        app:layout_constraintTop_toBottomOf="@id/date_input_text" />
+    <EditText
+        android:id="@+id/cww_input"
+        style="@style/EditTextStyle"
+        android:layout_marginTop="152dp"
+        android:text="asdfas"
+        app:layout_constraintLeft_toRightOf="@id/date_input"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cww_iput_text" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
